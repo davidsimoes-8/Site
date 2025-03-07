@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Designer Clothing - New Arrivals</title>
+  <!-- Link to the same CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="logo">
+        <h1>designer clothing </h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." />
+        <button>Search</button>
+      </div>
+      <div class="cart">
+        <a href="#">Cart (0)</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html" class="active">New Arrivals</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="sale.html">Sale</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Hero or Banner -->
+    <section class="hero" style="
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      url('https://via.placeholder.com/1400x400/ffefef/000?text=New+Arrivals') 
+      center/cover no-repeat;">
+      <h2>New Arrivals</h2>
+      <p>Explore the latest trends and seasonal items.</p>
+      <button class="cta-button">Shop Latest</button>
+    </section>
+
+    <!-- Products Section -->
+    <section class="featured-products">
+      <h2>This Week’s New Arrivals</h2>
+      <div class="products-grid">
+        <!-- Product Card 1 -->
+        <article class="product-card">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExMVFRUWFxcVFhUXGBcVFxcVFRgWFxgYFxcYHSggGBolGxUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFQ8PFSsdFR0rLS0tLS0rKy0rKy0tKysrLSstLSsrLS03LSsrLTctLTcrKystNy0tNysrKysrKy0rK//AABEIARMAtwMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAwQBAgUGBwj/xABEEAACAQICBQcHCAoCAwAAAAAAAQIDEQQhBRIxQVEHEyJhcYGRBhQyUqGxwRUjQnKCktHwCBczU2KissLS8YOjFiRj/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABoRAQEBAQADAAAAAAAAAAAAAAARATECIUH/2gAMAwEAAhEDEQA/APcQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADDZk6pylaW5jBTSdp1fmo9j9N/dTXehg6x5Wcq6pOcMNGLSyVWV2nbbJRustu/rtuOt0uVfGzStKmutQWfXaVzqWMnKVNxgu3c7dXHPccBhJ2jF3OkxHqNPlMx0lbnacZR2/Nrpdavdf6IYcpmPg9WdVSUvRfN01Z8HkdGlVs9birru/2jaNZVY22SWdhMHbY8pekYS6VfWtnZ06Wceq0Ts+geVmbcViacZRf0qacZJXyerJ2k+pWPI8TUjK0G7TXoy+Be0I8k5L0U0l1/wChMH1Jhq8akIzg1KMkpRa3pq6ZIdJ5J9Kc7g3Tbu6U3H7EulH2uS+yd2MaoACAAAAAAAAAAAABHiKupGUrN6qbstrsr2XWBIcbpbT2Gw37atCDeaje82uKgrya67HlPlByjYiurUnzFN+o/nJJ8an0fs2fWzqE8Re9823e7zd+Le9m88Ur0/TXKda6w1FNfvKjfshHd9ruPNvKvT9fETU603Pao7FGK4Risl78itzrXY9xT0jT14PjtXaakFejpGKVr2e6+zvaTa8DPmSkpPK8rvoyTV+NnsOAnPMa17K9iUdijhabio3kltyt7CviNHUt0pp9TSNIVOijOtkUR4jRdNR1ucm3t2J59eaNaekpWVODailm36Unv7CLFVHsuV1ZbCDuXklp+th5t0ZuDaztZp24p5Pbv4npujeU7JKtRu98qbtf7Mv8jxnQqtFze/Jdi2+33HK06wlHvWi/LHB19lZQl6tT5t9l3k+5s55O+aPmuFa+fA5PRHlJXwz+ZqygvV2wfG8H0b9drk3xK+ggUdB4qVXD0ak7Kc6cJySySlKKbsrvK7LxhQAAAAAAAA0rLJm5hgfL+l6XM4itQ2KnVnCP1VJqP8tiONS6Ob5VsBzekqtslUjCq+9anvpvxOtQmdc1FvnA5lV1AphHGaTwnS1o79qOPUjsU89px+Nwq22M7is0p9FEutkyCe5LeWuYmtxRSrq2fV+KGFwkqj4R3y4rq/EuU6LtdxjKy9F7s3mussVcRdZZCCdSSSSySyS6kbKqcdzxJGXWUcg6xBiK9k+NiGNUxCnrTj9ZeDdgj6m0VR1KUIerGMfBJFs0o7Dc5NAAAAAAAAAAA8N5baf/ALtJ7PmFd8Uqk7L2vxPOJVj0LlrblpGEM0lhoZ241al/6UdDjoqD+lL2HTOIrKubqsWoaJp72/Eljo6lwfiwKLrriRzrXVjkngKS+j7WR18JTUX0VkUUqdZQedPpcWXIYi62kripRV1coV+hcDbEVHCKtb47WVKmIuyfC1fWg58Mlk7vachDCUXnzaRBw/OmXX3HNLR1H1V7RLRdL1faxBxEK6Re0Y9arTt+8pq3bOKfvJHomlwfiyXAYKnTrUpJv9rSum8rc5AD6mp7DY1p7DY5qAAAAAAAAAADwjlwlbHw4+bR9tWodBw6ltfcd25YKinpOSv6FGlF2+1O3850xz4HTEWNdsa5BGYcyomczSrPJkama1J5MCem7K5J5wuGZV18jVzyCp6VbPPY9viyR5dZSo1NnZ8WWVPwAnUjZVCvrBSCLWtkVMVUdm1tSunwcWn8DZVCOaUnbiml2/gB9U4Ktr04zWyUVLxSfxJzr/kDi+d0fhZ3v8zCLfXBaj9sWdgOTQAAAAAAAAR16sYRlOTUYxTlKTySSV22+CRIeN8rHl3GbeDoTTpx/bTi8qk08qSa2xTzk1teW6SLmUdC8qtIPEYqtifo1Kja4qCtGndfVijh51UitX0k3eysntRTliG+03Ucjz6HOnHKTW5hTfB2JRyaqGtWTadijGq+D8GbwrS2WfC9hRyEmrcCGeIjuYhRdR6q2LazkqeCpRWy/aUcXTqZrr2e0suoSY2F42hG9tyS3N7OBxtR1Htg/AC6qhnnzjZKp6r8DHT9WQo5LnTenWT3nE60/VfgZVWXB+Ao995FtMqVKphG84N1aa/gm+ml2Tz/AORHpp8n+Tmna+Hr061K6lB3tbJrY4y4pq67z6S8kvKmjjqWvC8akbc5Sl6UH/dHhJex3SzufVc8ADIAAAAAPGeWTynrrE+ZQnq0ebjKSWTqOd8pPfFJejs23vlbzbLLj3HaOWrLSb66VOS7OlH3xZ0uEuLOmIuypw4LrMwpx4JdxDFm+uVFlRXBCy4IgjUNoyAmsktxpWtZkcqlzSpLJ9gFiM2lZW7kl7itWk3vHOqxWdZBU+CTTd3f/bL9+JxVKpZp36vaXVMCwrGLIj1zKmVEtkjCaIZVTVzILDnY1wOlZ0K9OtSm4ypyjK626qa1ovjFq6a3plWUypVYV9dRdzJT0RVcqFKT2yhBvtcUy4clAAAAAHh3LxhoxxNCp9KdOUH9WnK6z/5JeB5hFcLnqfL9RfO4af0XCpG+5OLi/apew8mddRN5xFrnBGoU1XTNJVGhRyKqm0qxQVc2jULRejMxOpkypKsYlUushRa1k0iamorcUI1kjPnHWKLcaid/zvZupbClTqfE2VZAXOcMuscfKqY84FF2dXMjhiLlGvicjRVEt/b+Ao5HnTS9yksSrm6r53JR9WeRNRywGElLa8PRv283E5s69yfTvo3Bt7fN6P8ARE7CY1QAAAAB4t+kGpyng4ReTVd2bsm48yk/CT8WeRRwE1m9Wx7Ty+RWrhXbpa1Wz4RtByXfaPgeSud0bziK1HBQau1vZJPAQX+yWjLorv8Aebtq6v1lFWtorpdCWVovPi4xcvBtruMfI8/WRyaglmiRVBBxC0PP10JaIl668Dl9cinITBTWjk83J9lrG60ZDi+4lpyyJFIop+ZRk9W7W3Pa8re0fJH8b8De+d9938LlrXIKPyP/ABvwMPQ38ZyHOGsqhZg4/wCTVG7cr5PInhhYWXQX5uZxDyzN6cskQVcRh431UrXS2cSB6Ntm55FyttX1SCvLK27YB9QeQmGdPR+EpyVpRoUk1wahG6OeOP8AJ+d8NRlxpU34xTOQOagAAAADzLl0wGvhKdW6XNVM77XGacWo9d9V9iZ4bKXRPcuXmolgqKe14iLXdSrbfE8LbyN5xE1OWS7F7zdTz/PWQwezuNk8+5FF2MzOsV9bIKoUT65pORG5Gsp5ASUnkbVJZGlB9EgxVa2RApzz738CypFGnu7X8CxfICXWMORE5DWAVGSUZZfnqIpSMQqZAbVJZx7yKtLbsfVxMznmu1/A1rsD6y0JFLD0lH0VTglfbZRVvYXijoKDjh6MXtVOCfaopF45qAAAAAPJ/wBIColQwyf72T8INfE8SjUye89v5fMOnh8PNq6jWcX9qEn/AGHijp07Xil7zecRtTf57jZP4e5ES/PgbKCd079zsUJ10jTzgs08BT3+9kr0dT4D2KKxIVdMv/J9P1TDwdP1UJojpTtFFalG87vcTr0TSgsnbeBvVqpXvsd/z7CrPFIno07tppd62ErwUOAFBYpGViEX1goeqbeZU/VQmijGumbRll+esnqYensUUQw2tWsBhy69+3tRBWrp3s+O52JkvgXsLUhCdKMknrTgpfVclrd1rgfVWiU1Rpp7VCKfbqotmlFWSNzmoAAAAA8v5e8TOOEowgk9euta/CEZS7s7eB4g8K3nFW4rc+tXPbOXyK82w7bs+fyXG9Od/h4njNKqbxFRUai+gzMIzvdQferHJQqmedtsZYK9GEtrLCkRyrGmuUTaxrKRE5mk5AR63RJcPsIIvIlissiDTXSl3/gXIZlCSs/H3InpzAtOQciNSNZSKIqtOUtiNFh6j3Z8botKRvrEgpRwc7q9vEldKzV+k21k9nV7SSpV4FeNXpJ32NPbwYH13SeRuaUthuc1AAAAAHkf6QUfmcK9yqTXe4X/ALWeLwkfU3lh5O08bQdGrFNbYvfGVmlKL3PN+LW88g0hyQVV+zrO38UFL2xa9xrNHnsK9hKrc7VX5LcatkoN9alH4Mrfq4x63UvvT/wLUdc12ZUjsP6u8f6tP70v8SX9W2P/APn96f8AgKOtaxhyO1R5NMbxp/z7fum8eTXG8adt/pv+0UdOpssxlZHIYryQxtObhzEpJNpSWqlJcduV+BH/AOM47Z5vPxh/kKOIqK77/wADeE7HYsB5BY6o0nTUFtbk07dVo3u/zc7Dh+SOs/SrPuhb2uRKOgKsHUR6G+R6purS+6vxJ4cjr31Z+EV8BR5rzxvzx3yvyPVvo1mu2F/dJGtPkgr3zr/9dv7y0dAlMxQp60orjJK3a7HqEORq6zrVb77aiX9LOZ8nuSWlSqwqTlUnqSU0pSVtaLTi2oxV7NLIlHq1HYbmsFZGxlQAAAAAMOKMgDR0lwMcxHgSACLmI8EZ5mPAkAGnNLgOaXA3AFaeBg83FGvydT9VeBbAEMMLFbEiXVRkAY1RYyAMaqGqjIAxYyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z/200x200" alt="New Arrival 1" />
+          <h3>vest</h3>
+          <p class="price">$69.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+        <!-- Product Card 2 -->
+        <article class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgAcQ7v68K_XIg0DYqi0gHeAfkSiXVN0i5kQ&s/200x200" alt="New Arrival 2" />
+          <h3>bags</h3>
+          <p class="price">$59.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+        <!-- Product Card 3 -->
+        <article class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS87AoG778gYNGZQwHKDDaK1O2O-bLW1bmLaA&s/200x200" alt="New Arrival 3" />
+          <h3>wristwatch</h3>
+          <p class="price">$49.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+        <!-- Product Card 4 -->
+        <article class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGl0yq2k_ufTSHGONwUGdwIDJRwBzNOB73zQ&s/200x200" alt="New Arrival 4" />
+          <h3>all star</h3>
+          <p class="price">$79.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>
+          ShopEasy brings you the newest fashion items every week.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Help &amp; FAQs</a></li>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Payment Options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

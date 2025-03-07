@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Designer Clothing- Women</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="logo">
+        <h1>Designer Clothing</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for products..." />
+        <button>Search</button>
+      </div>
+      <div class="cart">
+        <a href="#">Cart (0)</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="new-arrivals.html">New Arrivals</a></li>
+        <li><a href="women.html" class="active">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="sale.html">Sale</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" style="
+      background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      url('https://via.placeholder.com/1400x400/ffe5f6/000?text=Women%27s+Collection') 
+      center/cover no-repeat;">
+      <h2>Women’s Collection</h2>
+      <p>Elevate your style with our curated women's fashion.</p>
+      <button class="cta-button">Shop Women's</button>
+    </section>
+
+    <!-- Products Section -->
+    <section class="featured-products">
+      <h2>Popular Picks for Women</h2>
+      <div class="products-grid">
+        <!-- Product Card 1 -->
+        <article class="product-card">
+          <img src="data:image/jpeg;base64,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" alt="Women Product 1" />
+          <h3>Elegant Blouse</h3>
+          <p class="price">$50.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+        <!-- Product Card 2 -->
+        <article class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq9S_Zo0oOtdIrwhmv0MM1LosxrZQuvo7yUA&s/200x200" alt="Women Product 2" />
+          <h3>Summer Maxi Dress</h3>
+          <p class="price">$70.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+        <!-- Product Card 3 -->
+        <article class="product-card">
+          <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQd1E982lW3HWZOFjT6egVST6a0AeOd5oP-vZIROIQCIbqimI6P8MqdRf6Wqk_pFncKfFkw6b6qcJtIpWVrMiSaH4kWB2Uze_8gSHTfINd7kxh1KgNAsucINSrPZeY&usqp=CAc/200x200" alt="Women Product 3" />
+          <h3>High-Waisted Jeans</h3>
+          <p class="price">$60.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+        <!-- Product Card 4 -->
+        <article class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpvo_8-jWWIw2ixsHnr8v71sbdtRAhRGrqZA&s/200x200" alt="Women Product 4" />
+          <h3>Leather Handbag</h3>
+          <p class="price">$89.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>
+          ShopEasy is dedicated to providing the latest styles for women.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Help &amp; FAQs</a></li>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Payment Options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2025 ShopEasy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
